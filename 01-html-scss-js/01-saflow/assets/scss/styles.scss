@@ -1,0 +1,160 @@
+/************************ GOOGLE FONT ***********************/
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+/*************************** RESET **************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/************************** VARIABLES *************************/
+// white
+$white-text: #ffffff; // text logo & button, copy title, headings, price
+
+// blue
+$blue-600: #0059F7; // hero btn, cta campaign bg, basic pricing btn
+$blue-300: #689EFF; // campaign cta btn
+
+// gray
+$gray-900: #070E27; // body bg
+$gray-800: #081131; // free & premium pricing bg, features' bg hover
+$gray-700: #162044; // header btn, features' bg border, basic pricing, footer bg
+$gray-600: #4E5A85; // clients' companies logo, free & premium btn, dollar sign & checklist icon on pricing
+$gray-500: #7E8BB6; // main copy text, section category, pricing category, features icon
+$gray-300: #CCD2E9; // features copy text, pricing checklist text, footer text & sosmed icons
+$gray-200: #F4F7FF; // price
+
+/************************** GLOBAL *************************/
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: $gray-900;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3, h4,
+.header__logo-company-name,
+.btn {
+  color: $white-text;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -2%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.copy {
+  &__text {
+    color: $gray-500;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -2%;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/************************** HEADER *************************/
+.header {
+  min-height: 104px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 89, 247, .2);
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-img {
+    width: 32px;
+    margin-right: 12px;
+  }
+
+  &__logo-company-name {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -2%;
+  }
+  
+  &__btn {
+    background-color: $gray-700;
+  }
+}
+
+/************************** HERO **************************/
+.hero {
+  margin: 64px 0;
+
+  &__copy {
+    margin: 0 auto 64px;
+    width: 100%;
+    max-width: 628px;
+    text-align: center;
+  }
+  
+  &__text {
+    margin: 24px 0 32px;
+  }
+
+  &__cta {
+    background-color: $blue-600;
+  }
+
+  &__clients {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  &__client {
+    width: 180px;
+    height: 96px;
+
+    &:first-child {
+      padding: 30px 36px;
+    }
+
+    &:nth-child(2) {
+      padding: 32px;
+    }
+
+    &:nth-child(3) {
+      padding: 37px 40px 30px;
+    }
+
+    &:nth-child(4) {
+      padding: 38px 47px;
+    }
+
+    &:last-child {
+      padding: 34px 37px;
+    }
+  }
+}

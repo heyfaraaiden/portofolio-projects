@@ -1,0 +1,161 @@
+/************************ GOOGLE FONT ***********************/
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
+/*************************** RESET **************************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/************************** VARIABLES *************************/
+/************************** GLOBAL *************************/
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: #070E27;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h3, h4,
+.header__logo-company-name,
+.btn {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: -2%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+
+.copy__text {
+  color: #7E8BB6;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -2%;
+}
+
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/************************** HEADER *************************/
+.header {
+  min-height: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(0, 89, 247, 0.2);
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo-img {
+  width: 32px;
+  margin-right: 12px;
+}
+
+.header__logo-company-name {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -2%;
+}
+
+.header__btn {
+  background-color: #162044;
+}
+
+/************************** HERO **************************/
+.hero {
+  margin: 64px 0;
+}
+
+.hero__copy {
+  margin: 0 auto 64px;
+  width: 100%;
+  max-width: 628px;
+  text-align: center;
+}
+
+.hero__text {
+  margin: 24px 0 32px;
+}
+
+.hero__cta {
+  background-color: #0059F7;
+}
+
+.hero__clients {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+
+.hero__client {
+  width: 180px;
+  height: 96px;
+}
+
+.hero__client:first-child {
+  padding: 30px 36px;
+}
+
+.hero__client:nth-child(2) {
+  padding: 32px;
+}
+
+.hero__client:nth-child(3) {
+  padding: 37px 40px 30px;
+}
+
+.hero__client:nth-child(4) {
+  padding: 38px 47px;
+}
+
+.hero__client:last-child {
+  padding: 34px 37px;
+}
+/*# sourceMappingURL=styles.css.map */
